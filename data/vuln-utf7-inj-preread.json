@@ -1,0 +1,12 @@
+[{'friend':'luke','email':''}, 1].sort(function(x,y) {
+for (var o in x) {
+alert(o + ":" + x[o]);
+}
+});
+setTimeout(function() {
+var x = data[0];
+
+for (var o in x) {
+alert(o + ":" + x[o]);
+}
+}, 100);var data=[{'job':'done'}];

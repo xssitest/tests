@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+  function steal(dict) {
+     alert(dict);
+  }
+</script>
+<script type="text/javascript">
+x = new XMLHttpRequest();
+x.onreadystatechange = ProcessResults;
+x.open("GET", "../data/vuln-jsonp.json");
+function ProcessResults() {
+  if (x.readyState == 4 && x.status == 200)
+    eval(x.responseBody);
+}
+</script>
+</head>
+<body></body>
+</html>
